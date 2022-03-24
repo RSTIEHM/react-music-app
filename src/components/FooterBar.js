@@ -65,7 +65,7 @@ const FooterBar = () => {
                 </button>
               </div>
               <div className="volume-bar">
-                <input type="range" className="progress-range" min="0" max="100" step="1" ></input>
+                <input value="0" type="range" className="progress-range" min="0" max="100" step="1" ></input>
               </div>
             </div>
           </div>

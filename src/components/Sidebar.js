@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 
 const Sidebar = () => {
@@ -12,21 +12,21 @@ const Sidebar = () => {
       />
       <div className="group">
         <div className="navItem">
-          <a href="/" className={`nav-link`}>
+          <Link className="nav-link search-link" to="/search">
             Search
             <i className="fas fa-search side-bar-search"></i>
-          </a>
+          </Link>
         </div>
       </div>
       <div className="group">
-        <a href="/" className={`nav-link`}>
-          Albums
-        </a>
+        <Link className="nav-link" to="/">
+            Albums
+        </Link>
       </div>
       <div className="group">
-        <a href="/" className={`nav-link`}>
-          Playlists
-        </a>
+        <Link className="nav-link" to="/playlists">
+            Playlists
+        </Link>
       </div>
 
 

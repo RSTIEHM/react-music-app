@@ -1,19 +1,23 @@
+import { Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./routes/home/Home";
+import Playlist from "./routes/playlist/Playlist";
+import Search from "./routes/search/Search";
 
-
-import Navigation from "./components/Navigation";
-import FooterBar from "./components/FooterBar";
 
 function App() {
   return (
-    <div className="app">
-      <Navigation />
-      <div className="main">
-        <div className='home home-index'>
-          ASDASDsd
-        </div>
-      </div>
-      <FooterBar />
-    </div>
+    <Layout>
+      <Routes>
+        <Route path="/" element={<Home />}>
+            {/* NEST ALBUMS */}
+        </Route>
+          <Route path="playlists" element={<Playlist />} />
+          <Route path="search" element={<Search />} />
+      </Routes>
+    </Layout>
+
+
   );
 }
 
