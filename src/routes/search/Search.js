@@ -4,7 +4,7 @@ const Search = () => {
   return (
     <MainHeader title="SEARCH">
 
-      SEARCH
+     
 
     </MainHeader>
   )
