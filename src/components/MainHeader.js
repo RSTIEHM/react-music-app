@@ -7,10 +7,7 @@ const MainHeader = ({children, title}) => {
       <div className="page-header-title">
         <h1 className="page-name">{title}</h1>
       </div>
-      <div className="main">
         {children}
-      </div>
-
     </div>
     </>
   )
