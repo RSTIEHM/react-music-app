@@ -596,8 +596,8 @@ h2.single-album-title {
 .single-album-tracks-container {
     display: flex;
     flex-direction: column;
-    box-shadow: 3px 4px 1px rgb(41 40 40 / 43%);
-    padding: 0 0.5rem;;
+    /* box-shadow: 3px 4px 1px rgb(41 40 40 / 43%); */
+    padding: 0 1.5rem;;
 }
 
 .single-album-track,
@@ -1206,4 +1206,10 @@ a.active-nav-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }

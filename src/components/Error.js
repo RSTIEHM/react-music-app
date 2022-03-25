@@ -6,7 +6,7 @@ const Error = () => {
       <h1>Nothing To See Here....</h1>
       <img src="https://res.cloudinary.com/rjsmedia/image/upload/v1639407817/LogoMakr_j9vkdj.png" alt="Home" />
       <Link className="btn play-btn" to="/">
-          Home
+        Home
       </Link>
     </div>
   )
