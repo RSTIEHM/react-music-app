@@ -66,9 +66,15 @@ const Artist = () => {
           </div>
           <div className="all-songs-search-container">
             <h2 className="single-artist-artist">All Songs</h2>
-            <h3 data-trackid="7">So What</h3><h3 data-trackid="8">Blue In Green</h3><h3 data-trackid="25">Freddy The Freeloader</h3><h3 data-trackid="34">Move</h3><h3 data-trackid="35">Boplicity</h3>
+            {songs.map(song => {
+              return (
+                <h3 key={song.id}>{song.title}</h3>
+              )
+            })}
+
           </div>
-        </div></div>
+        </div>
+      </div>
     </MainHeader>
   )
 }
