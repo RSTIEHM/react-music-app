@@ -61,7 +61,7 @@ const Album = () => {
 
           {songs.map(song => {
             return (
-              <div className="single-album-tracks-container">
+              <div key={song.id} className="single-album-tracks-container">
                 <div className="single-album-track">
                   <div className="counter-container">
                     <p className="single-album-track-counter">1</p>
