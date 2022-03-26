@@ -26,7 +26,7 @@ const Home = () => {
       <div className="main">
         <div className="home home-index">
           {data.albums && data.albums.length > 0 && data.albums.map((album, i) => (
-            <Link to={`/album/${album.id}`} className="single-album-card" key={i}>
+            <Link to={`/react-music-app/album/${album.id}`} className="single-album-card" key={i}>
               <img className="single-album-image grid-view-img" src={album.artWorkPath} alt="Sabbath Bloody Sabbath" />
               <h2 className="single-album-title grid-view-info">{album.title}</h2>
             </Link>

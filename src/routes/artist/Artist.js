@@ -53,7 +53,7 @@ const Artist = () => {
                   <div className="search-albums-info-container">
                     {albums.map(album => {
                       return (
-                        <Link to={`/album/${album.id}`} className="single-album-card">
+                        <Link to={`/react-music-app/album/${album.id}`} className="single-album-card">
                           <img className="single-album-image grid-view-img" src={album.artWorkPath} alt="Kind Of Blue" />
                           <h2 className="single-album-title grid-view-info">{album.title}</h2>
                         </Link>
