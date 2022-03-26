@@ -46,10 +46,10 @@ const AppProvider = ({ children }) => {
     let foundTrack = songs[0].filter(song => song.id === id)
     let foundArtist = artists[0].filter(artist => artist.id === foundTrack[0].artist)
     let foundAlbum = albums[0].filter(album => album.id === foundTrack[0].album)
-
-    console.log(foundTrack, 'FOUND Track')
-    console.log(foundArtist,'FOUND ARTIST')
-    console.log(foundAlbum,'FOUND ALBUM')
+    console.log(playlist, 'PLAYLIST')
+    // console.log(foundTrack, 'FOUND Track')
+    // console.log(foundArtist,'FOUND ARTIST')
+    // console.log(foundAlbum,'FOUND ALBUM')
  
     setSelectedSong(foundTrack[0])
     setSelectedArtist(foundArtist[0])

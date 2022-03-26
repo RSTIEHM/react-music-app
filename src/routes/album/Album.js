@@ -11,8 +11,7 @@ const Album = () => {
   let { id } = useParams()
   const [data, setData] = useState();
 
-  const {getTrack, selectedTrackIndex, selectedSong} = useContext(AppContext)
-
+  
   const fetchProduct = () => {
     axios
       .get(
@@ -29,7 +28,8 @@ const Album = () => {
     fetchProduct();
   }, []);
 
-
+  const {getTrack, selectedTrackIndex, selectedSong} = useContext(AppContext)
+  console.log(selectedTrackIndex, 'Selected TRACK INDEX')
   if (!data || data === 'undefined') {
     return (
       <MainHeader title="ARTIST & ALBUM">
@@ -49,12 +49,13 @@ const Album = () => {
   const routeCheck = id === selectedSong?.album
 
   const setTrack = (id, index) => {
+    console.log(album, 'ALBUM')
     const allSelectedPlaylist = {
       album,
       artist,
       songs
     }
-    console.log(allSelectedPlaylist)
+
     const selectedIndex = index
     getTrack(id, allSelectedPlaylist, selectedIndex)
   }
@@ -73,7 +74,7 @@ const Album = () => {
                 <h4 className="track-count">{songs.length} Songs</h4>
                 <p>{album[0].description}</p>
                 <div className="button-container">
-                  <button onClick={() => setTrack(album[0].id, 0)} className="btn play-btn">Play</button>
+                  <button onClick={() => setTrack(songs[0].id, 0)} className="btn play-btn">Play</button>
                   <button className="btn save-btn">Save</button>
                 </div>
               </div>

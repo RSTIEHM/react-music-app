@@ -12,7 +12,7 @@ const FooterBar = () => {
     playNextTrack,
   } = useContext(AppContext)
 
-
+  console.log(selectedPlaylist, 'select Playlist')
 
   let defaultStartTime = '0:00'
   const [input, setInput] = useState(0)
@@ -64,15 +64,15 @@ const FooterBar = () => {
         <div className="now-playing-bar">
           <div className="now-playing-left">
             <div className="content record-content">
-            {/* <img
+            <img
                 className="record-cover"
-                src={Object.keys(selectedPlaylist).length === 0 ? "https://res.cloudinary.com/rjsmedia/image/upload/v1639407817/LogoMakr_j9vkdj.png" : selectedPlaylist.singleAlbum.artWorkPath}
+                src={Object.keys(selectedPlaylist).length === 0 ? "https://res.cloudinary.com/rjsmedia/image/upload/v1639407817/LogoMakr_j9vkdj.png" : selectedPlaylist.album[0].artWorkPath}
                 alt="album cover"
               />
               <div className="record-info">
-              <h3 className="record-artist">{Object.keys(selectedPlaylist).length === 0 ? '' : selectedPlaylist.singleArtist.name}</h3>
+              <h3 className="record-artist">{Object.keys(selectedPlaylist).length === 0 ? '' : selectedPlaylist.artist[0].name}</h3>
                 <p className="record-title">{selectedSong ? selectedSong.title : ''}</p>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className="now-playing-center">
