@@ -5,7 +5,7 @@ const Error = () => {
     <div className="error-page">
       <h1>Nothing To See Here....</h1>
       <img src="https://res.cloudinary.com/rjsmedia/image/upload/v1639407817/LogoMakr_j9vkdj.png" alt="Home" />
-      <Link className="btn play-btn" to="/">
+      <Link className="btn play-btn" to="/react-music-app">
         Home
       </Link>
     </div>
