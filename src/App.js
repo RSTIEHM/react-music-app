@@ -12,10 +12,10 @@ function App() {
     <Layout>
       <Routes>
         <Route path="/react-music-app" index element={<Home />} />
-        <Route path="playlists" element={<Playlist />} />
-        <Route path="search" element={<Search />} />
-        <Route path="album/:id" element={<Album />} />
-        <Route path="artist/:id" element={<Artist />} />
+        <Route path="/react-music-app/playlists" element={<Playlist />} />
+        <Route path="/react-music-app/search" element={<Search />} />
+        <Route path="/react-music-app/album/:id" element={<Album />} />
+        <Route path="/react-music-app/artist/:id" element={<Artist />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </Layout>

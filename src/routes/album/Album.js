@@ -69,7 +69,7 @@ const Album = () => {
             <div className="image-album-info">
               <img className="single-album-image" src={album[0].artWorkPath} alt="Record cover for Upstairs At Eric's" />
               <div className="single-album-content">
-                <Link to={`/artist/${artist[0].id}`} className="single-album-artist search-artist-card-artist single-underline" data-id="8">{artist[0].name} <span className="artist-name-span">{routeCheck ? '(Now Playing...)': ''}</span></Link>
+                <Link to={`/react-music-app/artist/${artist[0].id}`} className="single-album-artist search-artist-card-artist single-underline" data-id="8">{artist[0].name} <span className="artist-name-span">{routeCheck ? '(Now Playing...)': ''}</span></Link>
                 <h3 className="single-album-title">{album[0].title}</h3>
                 <h4 className="track-count">{songs.length} Songs</h4>
                 <p>{album[0].description}</p>
