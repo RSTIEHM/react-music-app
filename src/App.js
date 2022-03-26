@@ -11,7 +11,7 @@ function App() {
   return (
     <Layout>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/react-music-app" index element={<Home />} />
         <Route path="playlists" element={<Playlist />} />
         <Route path="search" element={<Search />} />
         <Route path="album/:id" element={<Album />} />
