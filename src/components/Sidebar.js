@@ -19,7 +19,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="group">
-        <Link className="nav-link" to="/react-music-app">
+        <Link className="nav-link" to="/react-music-app/">
             Albums
         </Link>
       </div>
